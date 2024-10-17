@@ -1,15 +1,16 @@
-var randomNumber1 = Math.floor(Math.random() *6 + 1); 
+
+var randomNumber1 = Math.floor(Math.random()*6 + 1); 
 var randomDiceImage = "images/dice" + randomNumber1 + ".png";
 
 var image1 = document.querySelector(".img1"); 
 image1.setAttribute("src", randomDiceImage); 
 
 
-var randomNumber2 = Math.floor(Math.random()); 
+var randomNumber2 = Math.floor(Math.random() *6 + 1); 
 var randomImageSource2 = "images/dice" + randomNumber2 + ".png"; 
 
-var image2 = document.querySelectorAll(".img2"); 
-image2.setAttribute("src", randomImageSource2); 
+var image2 = document.querySelector(".img2"); 
+image2.setAttribute("src", randomImageSource2);
 
 
 if (randomNumber1 > randomNumber2) {
